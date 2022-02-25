@@ -1,5 +1,6 @@
 import React from "react";
 import ExpenseItem from "./ExpenseItem";
+import "./Expenses.css";
 
 export default function Expenses(props) {
   let expenses = props.expenses;
