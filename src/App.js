@@ -10,9 +10,15 @@ function App() {
     { id: "e4", title: "title 4", amount: 300.56, date: new Date(2019, 1, 29) },
   ];
 
+  function handleAddExpense(newExpense) {
+    newExpense = { ...newExpense, id: `e${expenses.length + 1}` };
+    expenses.push(newExpense);
+    console.log(expenses);
+  }
+
   return (
     <div className="App">
-      <NewExpense />
+      <NewExpense onAddExpense={handleAddExpense} />
       <Expenses expenses={expenses} />
     </div>
   );
