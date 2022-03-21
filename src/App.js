@@ -18,7 +18,6 @@ function App() {
     setExpenses((prevState) => {
       return [newExpense, ...prevState];
     });
-    console.log(expenses);
   }
 
   return (
