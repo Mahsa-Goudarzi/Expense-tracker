@@ -22,7 +22,7 @@ export default function ExportForm(props) {
   function handleFormSubmit(event) {
     event.preventDefault();
     let expenseData = {
-      titel: inputTitle,
+      title: inputTitle,
       amount: inputAmount,
       date: new Date(inputDate),
     };
