@@ -1,0 +1,9 @@
+.ExpensesList {
+  list-style: none;
+  padding: 0;
+}
+
+.ExpensesList-fallback {
+  color: white;
+  text-align: center;
+}

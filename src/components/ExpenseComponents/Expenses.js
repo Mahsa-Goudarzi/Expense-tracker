@@ -12,13 +12,17 @@ export default function Expenses(props) {
   }
 
   let expenses = props.expenses;
+  const filteredExpenses = expenses.filter((expense) => {
+    return expense.date.getFullYear().toString() === filteredYear;
+  });
+
   return (
     <Card className="Expenses">
       <ExpensesFilter
         selected={filteredYear}
         onFilterChange={handleFilterChange}
       />
-      <ExpensesList expenses={expenses} />
+      <ExpensesList expenses={filteredExpenses} />
     </Card>
   );
 }
