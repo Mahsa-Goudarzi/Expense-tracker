@@ -15,7 +15,7 @@ export default function NewExpense(props) {
       <div className="NewExpense">
         <ExportForm
           onAddExpense={handleAddExpense}
-          onCancelClick={handleFormClick}
+          onCancel={handleFormClick}
         />
       </div>
     );
